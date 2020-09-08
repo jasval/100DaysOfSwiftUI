@@ -18,6 +18,10 @@ struct ContentView: View {
 		Form {
 			TextField("Enter your name", text: $name)
 			Text("Your name is: \(name)")
+			
+			ForEach(0..<5) {
+				Text("\($0)")
+			}
 		}
     }
 }
